@@ -1,1 +1,1 @@
-# codeCrumbs
+A cool snippet manager with:

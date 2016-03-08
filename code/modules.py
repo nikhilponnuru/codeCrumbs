@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 def get_extension(file_name):
     if file_name.find('.')!=-1:
@@ -21,3 +22,10 @@ def find(name, path):
     for root, dirs, files in os.walk(path):
         if name in files:
             return os.path.join(root, name)
+
+
+
+#ubuntu notification (message sending)
+def sendmessage(message):
+    subprocess.Popen(['notify-send', message])
+    return

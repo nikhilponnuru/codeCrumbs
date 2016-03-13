@@ -15,3 +15,14 @@ Dependencies:-
   ii)Install xclip
   sudo apt-get install xclip
   
+<h4>How it works :</h4>  
+  <b>adding to repo</b>:<br>
+    add a single line above the code which you want to save to repository of code snippets as :
+      add to code snippets filename.extension -safe 
+      
+  <b>retreiving from the code snippets repo:</b>
+    add a single line at a place where you want the code to be used in your current code as:
+       from code snippets filename.extension -safe -deep
+  
+
+

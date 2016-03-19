@@ -4,20 +4,23 @@ How it woks
 
 this uility currently has two parts 1)adding to code snippet manager 2)fetching from that manager
 
-Note:-- use the command , here means copy that command to clipboard using <strong>ctrl+c </strong> and to get the results use <strong>ctrl+v</strong>
+>Note:-- use the command , here means copy that command to clipboard using <strong>ctrl+c </strong> and to get the       results use <strong>ctrl+v</strong>
 
-1) Adding to Code Snippet repository
+<h4>1) Adding to Code Snippet repository</h4>
 
 whichever lines of code you want to store or manage, above those lines of code mention a single as command 
  
- command:-- <strong>add to code snippets filename.extension -safe </strong>
+>command:-- <strong>add to code snippets filename.extension -safe </strong>
+>
  
 copy the block of code along with the above command (first line must be command) to the clipboard (i.e ctrl+c )and that does everything 
 
-or you can even add other logic to the same filename (i.e append other logic to existing file)
+<strong>or</strong>
+
+you can even add other logic to the same filename (i.e append other logic to existing file)
   to differentiate between different logics existing in same file, "@@" symbols are used to seperate them inside the file
  
-
+<br>
 
 the above command will add the code into the respective folders (e.g:-if "sample.py" is filename then it saves the code in code_snippets > PY >sample.py
 
@@ -26,17 +29,19 @@ the above command will add the code into the respective folders (e.g:-if "sample
 
 
 
-2)Retrieving from code_snippet repository (folder on your system)
+<h4>2)Retrieving from code_snippet repository (folder on your system)</h4>
 
 to retrieve any logic or code you have stored all you need to do is use the below command and copy that to clipboard
 
-command:- <strong>from code snippets filename.py -safe</strong>
+>command:- <strong>from code snippets filename.py -safe</strong>
+>
 
-or
+<strong>or</strong>
 
 if you can't remember the filename, you can mention any of the comment or word in that file
 
-command:- <strong>from code snippets 'comment or any word' -safe -deep</strong>
+>command:- <strong>from code snippets 'comment or any word' -safe -deep</strong>
+>
 
 <gif>
 
@@ -46,18 +51,19 @@ command:- <strong>from code snippets 'comment or any word' -safe -deep</strong>
 at any time you can stop the python script running back by copying the below command to clipboard
 
 
-command:-<strong>stop -safe</strong>
+>command:-<strong>stop -safe</strong>
+>
 
 
 
 
-Dependencies:-
-
+<strong>Dependencies:-</strong>
+ 
   i)Install <a href="https://pypi.python.org/pypi/pyperclip"> pyperclip</a> from pip
-  pip install pyperclip
+  >pip install pyperclip
   
   ii)Install xclip
-  sudo apt-get install xclip
+ >sudo apt-get install xclip
   
 after installing the above 
 

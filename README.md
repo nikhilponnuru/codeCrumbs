@@ -1,28 +1,79 @@
-A simple code snippet manager 
+A very simple code snippet manager to manage your code from any IDE
 
 How it woks
 
+this uility currently has two parts 1)adding to code snippet manager 2)fetching from that manager
+
+Note:-- use the command , here means copy that command to clipboard using <strong>ctrl+c </strong> and to get the results use <strong>ctrl+v</strong>
+
 1) Adding to Code Snippet repository
 
+whichever lines of code you want to store or manage, above those lines of code mention a single as command 
+ 
+ command:-- <strong>add to code snippets filename.extension -safe </strong>
+ 
+copy the block of code along with the above command (first line must be command) to the clipboard (i.e ctrl+c )and that does everything 
 
-2)Retrieving from Code Snippet repository (folder on your system)
+or you can even add other logic to the same filename (i.e append other logic to existing file)
+  to differentiate between different logics existing in same file, "@@" symbols are used to seperate them inside the file
+ 
+
+
+the above command will add the code into the respective folders (e.g:-if "sample.py" is filename then it saves the code in code_snippets > PY >sample.py
+
+<gif>
+
+
+
+
+2)Retrieving from code_snippet repository (folder on your system)
+
+to retrieve any logic or code you have stored all you need to do is use the below command and copy that to clipboard
+
+command:- <strong>from code snippets filename.py -safe</strong>
+
+or
+
+if you can't remember the filename, you can mention any of the comment or word in that file
+
+command:- <strong>from code snippets 'comment or any word' -safe -deep</strong>
+
+<gif>
+
+
+
+
+at any time you can stop the python script running back by copying the below command to clipboard
+
+
+command:-<strong>stop -safe</strong>
+
+
+
 
 Dependencies:-
 
-  i)Install pyperclip from pip
+  i)Install <a href="https://pypi.python.org/pypi/pyperclip"> pyperclip</a> from pip
   pip install pyperclip
   
   ii)Install xclip
   sudo apt-get install xclip
   
-<h4>How it works :</h4>  
-  <b>adding to repo</b>:<br>
-    add a single line above the code which you want to save to repository of code snippets as :
-      add to code snippets filename.extension -safe 
-      
-  <b>retreiving from the code snippets repo:</b>
-    add a single line at a place where you want the code to be used in your current code as:
-       from code snippets filename.extension -safe -deep
-  
+after installing the above 
+
+go to -- codeCrumbs/code/ 
+then chmod +x codedisplay.sh and then ./codedisplay.sh  if you want to fetch the code or logic that was already stored
+
+or if you want to store or add logic or code to code_Snippet manager then 
+chmod +x create_file.sh and then ./create_file.sh
+
+Note:-you can <strong>force</strong> close your terminal after executing the above commands,then the script starts running in background and you can stop the above background running process at any time by copying command:-- <strong>stop -safe </strong>
+
+
+<h3>TODO:--</h3>
+1)Combine fetch and display parts of above utility to one so that only one script can be made to run and that does the above 2 features in a single execution (since now both scripts must be individually executed and that is tieresome)
+2)when multiple logics are appened to same file then when which logic to display to user when he wants to get from that file!!
+
+
 
 

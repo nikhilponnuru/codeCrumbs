@@ -26,7 +26,7 @@ you can even add other logic to the same filename (i.e append other logic to exi
 
 the above command will add the code into the respective folders (e.g:-if "sample.py" is filename then it saves the code in code_snippets > PY >sample.py
 
-<gif>
+![alt tag](https://github.com/nikhilponnuru/codeCrumbs/blob/master/screenshots/add.gif)
 
 
 
@@ -44,7 +44,7 @@ if you can't remember the filename, you can mention any of the comment or word i
 
     command:-from code snippets 'comment or any word' -safe -deep
 
-<gif>
+![alt tag](https://github.com/nikhilponnuru/codeCrumbs/blob/master/screenshots/fetch.gif)
 
 
 
